@@ -1,0 +1,53 @@
+'''
+    -  Precision measures that out of all the positive predicted examples, how many detections were correct?
+    -  Recall measures that out of all actual positive examples, how many were we able to identify?
+
+
+    - secret keys 
+            1. When you cannot afford to have any false negatives, you prioritize recall.(sensitivity)
+            2. When you cannot afford to have any false positives, you prioritize precision.          
+
+'''
+'''
+            Let’s dive right into what we have been waiting for — the different use-cases 
+                    where we prioritize one metric over the other.
+
+            1) Medical test (eg. cancer detection):  Recall is more important
+
+                        🔖 It is okay to classify a healthy person as having cancer (false positive) 
+                        and following up with more medical tests, 
+                        but it is definitely not okay to miss identifying a cancer patient or 
+                        classifying a cancer patient as healthy (false negative) since the person’s
+                        life is at stake.
+
+            2) Recommendation Systems: Precision is more important
+                        🔖 Missing out to recommend a particular famous movie is okay (low recall), 
+                        but the overall recommendations should be good. If the customer is shown a lot
+                        of irrelevant results (false positives), it will be a very bad experience for the user.
+
+            3)  Predicting a good day based on weather conditions to launch satellite: Precision is more important
+                        🔖 Missing out to predict a good weather day is okay (low recall),
+                        but predicting the wrong weather day (false positive) to launch the 
+                        satellite can be disastrous.
+
+            4)  Criminal death punishment: Precision is more important
+                        🔖 Missing out to punish a criminal is okay (low recall), 
+                        but incriminating an innocent person (false positive) is undesirable.
+
+            5)  Email spam detection: Precision is more important
+                        🔖 Missing out to detect/classify a spam email is okay (low recall),
+                        but no legit or important email must go into the spam folder (false positive).
+
+            6) Identifying good customers for a bank loan: Precision is more 
+                        🔖 Missing out to identify/classify a good customer eligible for the loan is okay (low recall), 
+                        but approving a loan to a bad customer (false positive) who may never repay it is undesirable.
+
+            7) Flagging fraudulent transactions: Recall is more important
+                        🔖 It is okay to classify a legit transaction as fraudulent — 
+                        it can always be reverified by passing through additional checks.
+                        But it is definitely not okay to classify a fraudulent transaction
+                        as legit (false negative).
+
+
+
+'''
